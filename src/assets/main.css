@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+html{
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: #ddebff74;
+}
+#app {
+    max-width: 940px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-weight: normal;
+}
