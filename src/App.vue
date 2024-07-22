@@ -1,8 +1,6 @@
 <script setup>
 import AppHeader from "./components/AppHeader.vue";
 </script>
-
-
 <script>
 export default {
   data() {
@@ -159,9 +157,6 @@ export default {
     },
 },
   
-  
- 
-
   methods: {
     sortTickets(parameter) {
       this.sortParameter = parameter;
@@ -193,13 +188,11 @@ export default {
         <button
           class="switch__button size-btn switch__button-cheap" v-bind:class="clicked ? 'white' : 'blue'" v-on:click="clicked = !clicked"
           @click="sortTickets('price')" >
-          <!-- onclick="selectTab('billing')" :style="getStyle('billing')" -->
           Самый дешевый
         </button>
         <button
           class="switch__button size-btn switch__button-faster" v-bind:class="clicked ? 'blue' : 'white'" v-on:click="clicked = !clicked"
           @click="sortTickets('time')"  >
-          <!-- onclick="selectTab('shipping')" :style="getStyle('shipping')" -->
           Самый быстрый
         </button>
       </div>
@@ -258,45 +251,6 @@ export default {
         </div>
       </div>
 
-      <!-- <div  class="cards">
-        
-        <div class="card box" v-for="ticket in sortedTickets" :key="ticket.id">
-          <div class="card-airlines">
-            <div class="card-price">{{ ticket.price }} P</div>
-            <div class="card-Airoflot">
-              <img :src="ticket.imageUrl" :alt="Image" />
-            </div>
-          </div>
-          <div class="card-tickets">
-            <div class="card-tickets-time">
-              <div class="card-tickets-time__title">{{ ticket.timeTitleOne }}</div>
-              <div class="card-tickets-time__text">{{ ticket.timeTextOne }}</div>
-            </div>
-            <div class="card-way">
-              <div class="card-way__title">{{ ticket.wayTitleOne }}</div>
-              <div class="card-way__text">{{ ticket.wayTextOne }}</div>
-            </div>
-            <div class="card-transfers">
-              <div class="card-transfers__title">{{ ticket.transfersTitleOne }}</div>
-              <div class="card-transfers__text">{{ ticket.transfersTextOne }}</div>
-            </div>
-          </div>
-          <div class="card-tickets">
-            <div class="card-tickets-time">
-              <div class="card-tickets-time__title">{{ ticket.timeTitleTwo }}</div>
-              <div class="card-tickets-time__text">{{ ticket.timeTextTwo }}</div>
-            </div>
-            <div class="card-way">
-              <div class="card-way__title">{{ ticket.wayTitleTwo }}</div>
-              <div class="card-way__text">{{ ticket.wayTextTwo }}</div>
-            </div>
-            <div class="card-transfers">
-              <div class="card-transfers__title">{{ ticket.transfersTitleTwo }}</div>
-              <div class="card-transfers__text">{{ ticket.transfersTextTwo }}</div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </main>
 </template>
