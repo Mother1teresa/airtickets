@@ -312,10 +312,11 @@ main {
   background: #fff;
   border-radius: 0.425rem;
   padding: 1rem 0;
-  width: 250px;
+  width: 15.625rem;
 }
 .box {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.142);
+  /* box-shadow: 0px 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.142); */
 }
 .search-form__title {
   font-size: 0.7rem;
@@ -327,7 +328,7 @@ main {
 .search-form__input {
   color: #0c0c0cbb;
   font-size: 0.8rem;
-  padding: 10px;
+  padding: 0.625rem;
   /* height: 15px; */
   padding-left: 1.3rem;
 }
