@@ -6,6 +6,8 @@ export default {
   data() {
     
     return {
+      lang: `ru`,
+      text:  `Привет, мир`,
       clicked: false,
       filters: {
       all: {
@@ -99,6 +101,7 @@ export default {
       
       
     };
+   
   },
   watch: {
     'filters.all.status'(val) {
@@ -161,7 +164,10 @@ export default {
     sortTickets(parameter) {
       this.sortParameter = parameter;
     },
-   
+    next(){
+      this.lang = 'eng';
+      this.text = 'hello world'
+    },
   },
 };
 </script>
@@ -252,6 +258,8 @@ export default {
       </div>
 
     </div>
+    <button @click="next">{{lang}}</button>
+    <p>{{text}}</p>
   </main>
 </template>
 
